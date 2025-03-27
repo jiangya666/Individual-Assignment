@@ -1,0 +1,20 @@
+#box {
+    width: 1200px;   /* 设置父元素盒子总宽度=每张图片宽度+图片中间的边距margin之和 */
+    margin: 50px auto;  /* 设置父元素距顶部50px，居中，便于显示 */
+    overflow: hidden;  /* 设置超出的图片内容隐藏 */
+    
+}
+#box ul {
+    list-style: none;   /* 取消ul的默认圆点样式 */
+    width: 5000px;    /* ul宽度设置大一点，超过图片+边距总长度的两倍 */
+    position: relative;   /* 设置相对定位，便于使用left控制图片列表的位置，不断左移 */
+}
+#box ul li {
+    float: left;    /* 设置每一项靠左在一行显示 */
+    margin-right: 10px;  /* 设置右边距 */
+}
+#list img{
+    width: 300px;  /* 设置图片统一宽度 */
+    height: 250px;
+    /* object-fit: cover; */
+}
